@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHANTOM_ARCADE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">PHANTOM</div>
+        <input type="text" id="search" placeholder="Search..." onkeyup="search()">
+        <div class="nav">
+            <button onclick="renderAll()">Home</button>
+            <button onclick="filter('Action')">Action</button>
+            <button onclick="filter('Sports')">Sports</button>
+        </div>
+    </div>
+
+    <main id="content"></main>
+
+    <div id="player">
+        <div class="bar">
+            <button onclick="closeGame()">EXIT</button>
+            <span id="playing"></span>
+            <button onclick="fs()">FS</button>
+        </div>
+        <iframe id="frame"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
